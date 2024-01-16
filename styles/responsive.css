@@ -28,4 +28,8 @@
         width: 100%;
         order: 1;
     }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
