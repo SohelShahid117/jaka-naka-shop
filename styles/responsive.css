@@ -1,0 +1,31 @@
+@media screen and (max-width:676px) {
+    .header-section {
+        flex-direction: column;
+        /* margin: 0 auto; */
+        /* margin: 0px 20px; */
+        margin-left: 50px;
+    }
+
+    .item-container {
+        flex-direction: column;
+        margin: 0 auto;
+        /* margin: 0px 20px; */
+        gap: 10px;
+        margin-left: 50px;
+    }
+
+    .banner-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .banner-text-container {
+        width: 100%;
+        order: 2;
+    }
+
+    .banner-img-container {
+        width: 100%;
+        order: 1;
+    }
+}

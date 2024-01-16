@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
 * {
     margin: 0;
@@ -10,6 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* start header section */
 .header {
     background-color: blueviolet;
 }
@@ -20,11 +22,12 @@ body {
     margin: 0 auto;
     /* border: 2px solid blue; */
     display: flex;
+    flex-direction: row;
 }
 
 .nav-container {
     /* border: 2px solid red; */
-    min-height: 60px;
+    min-height: 80px;
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -55,6 +58,7 @@ body {
     /* justify-content: center; */
     /* justify-content: end; */
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .item-container a {
@@ -64,10 +68,107 @@ body {
     font-weight: 500;
 }
 
-.item-container .login a {
+.login {
     padding: 10px 20px;
     background-color: plum;
-    color: black;
     border-radius: 5px;
     border: none;
+}
+
+.item-container .login a {
+    color: black;
+}
+
+/* start banner section */
+.banner-section {
+    max-width: 950px;
+    margin: 0 auto;
+    min-height: 200px;
+    /* border: 2px solid red; */
+    display: flex;
+    /* background-color: rgb(203, 227, 234); */
+    background-color: #e6e9eb;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.banner-text-container {
+    /* border: 2px solid green; */
+    width: 50%;
+}
+
+.banner-img-container {
+    /* border: 2px solid blue; */
+    width: 50%;
+    position: relative;
+}
+
+.banner-img-container img {
+    width: 80%;
+    /* width: 100%; */
+    object-fit: cover;
+    display: block;
+    /* margin: 30px auto; */
+    height: 100%;
+    border-radius: 10px;
+}
+
+.banner-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.banner-text-container h1,
+p,
+span {
+    font-size: 40px;
+}
+
+.banner-heading {
+    background: linear-gradient(to bottom, plum, blueviolet);
+    /* background: linear-gradient(45deg, plum, blueviolet); */
+    background-clip: text;
+    color: transparent;
+    font-size: 80px;
+}
+
+.banner-para {
+    font-family: 'Marck Script', cursive;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.icons span {
+    margin-right: 20px;
+}
+
+.common-button {
+    padding: 10px 20px;
+    border: 2px solid plum;
+    border-radius: 5px;
+    margin-right: 20px;
+    /* color: #fff; */
+}
+
+.discount {
+    width: 60px;
+    height: 60px;
+    background-color: #d1d848;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* position: relative;
+    top: -275px;
+    left: 295px; */
+    position: absolute;
+    /* top: 96px; */
+    bottom: 70%;
+    left: 50%;
+    /* % use korle best hobe ,choto boro j kono device e position same takbe */
 }
